@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trackvers.mervsolutions.io/sitemap.xml

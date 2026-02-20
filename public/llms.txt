@@ -1,0 +1,9 @@
+## Pages
+- [About TrackVers - Centralized Software Intelligence](/about): TrackVers is a centralized platform built to help users find software information, lifecycle dates, and version details without wasting time searching the internet.
+- [Admin Dashboard - Software Management](/admin): No description available
+- [Dashboard - TrackVers](/dashboard): No description available
+- [Documentation - TrackVers Categories](/documentation): Explore TrackVers documentation categories to find organized software information across languages, frameworks, databases, and more.
+- [Login - TrackVers](/login): Login to your TrackVers account to manage your favorites and notifications.
+- [My Profile - TrackVers](/profile): Manage your TrackVers profile and notification settings.
+- [Sign Up - TrackVers](/signup): Create a new TrackVers account.
+- [TrackVers - Never Miss a Software Update Again](/home): Track the latest versions of your favorite software, operating systems, and development tools. Get instant notifications when updates are released.

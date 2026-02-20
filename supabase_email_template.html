@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to TrackVers</title>
+  <style>
+    /* Reset styles */
+    body { margin: 0; padding: 0; min-width: 100%; width: 100% !important; height: 100% !important; }
+    body, table, td, div, p, a { -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-spacing: 0; }
+    img { border: 0; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+    
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .email-container { width: 100% !important; margin: auto !important; }
+      .fluid { max-width: 100% !important; height: auto !important; margin-left: auto !important; margin-right: auto !important; }
+      .stack-column, .stack-column-center { display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important; }
+      .stack-column-center { text-align: center !important; }
+      .center-on-mobile { text-align: center !important; }
+      .pad-on-mobile { padding-left: 15px !important; padding-right: 15px !important; }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #0f172a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #e2e8f0;">
+
+  <!-- 
+    IMPORTANT: 
+    1. Go to Supabase Dashboard -> Authentication -> Email Templates
+    2. Select "Confirm Your Email"
+    3. Set Subject to: "Welcome to TrackVers - Confirm Your Email"
+    4. Paste the HTML code below into the "Message Body"
+  -->
+
+  <!-- Main Background -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #0f172a; background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+    <tr>
+      <td align="center" style="padding: 40px 15px;">
+        
+        <!-- Email Container -->
+        <table border="0" cellpadding="0" cellspacing="0" width="600" class="email-container" style="background-color: #1e293b; border-radius: 16px; border: 1px solid #334155; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);">
+          
+          <!-- Header / Logo -->
+          <tr>
+            <td align="center" style="padding: 40px 40px 30px 40px; border-bottom: 1px solid #334155;">
+              <h1 style="margin: 0; font-size: 36px; font-weight: 800; color: #ffffff; letter-spacing: -0.03em; font-family: sans-serif;">
+                <span style="color: #60a5fa;">Track</span><span style="color: #22d3ee;">Vers</span>
+              </h1>
+            </td>
+          </tr>
+
+          <!-- Main Content -->
+          <tr>
+            <td align="center" style="padding: 40px 40px 20px 40px;" class="pad-on-mobile">
+              <h2 style="margin: 0 0 24px 0; font-size: 24px; font-weight: 600; color: #f1f5f9; text-align: center;">Welcome to TrackVers!</h2>
+              
+              <p style="margin: 0 0 30px 0; font-size: 16px; line-height: 1.6; color: #94a3b8; text-align: center;">
+                TrackVers is your comprehensive software end-of-life tracking platform. Stay informed about software updates, security patches, and version changes across all your tools.
+              </p>
+              
+              <!-- CTA Button -->
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" style="border-radius: 8px; background: #2563eb; background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);">
+                    <a href="{{ .ConfirmationURL }}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                      Confirm Email Address
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Link Fallback -->
+          <tr>
+            <td align="center" style="padding: 0 40px 40px 40px;" class="pad-on-mobile">
+              <p style="margin: 20px 0 0 0; font-size: 14px; line-height: 1.5; color: #64748b; text-align: center;">
+                If the button above doesn't work, copy and paste this link into your browser:<br>
+                <a href="{{ .ConfirmationURL }}" style="color: #22d3ee; text-decoration: none; word-break: break-all;">{{ .ConfirmationURL }}</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding: 30px 40px; background-color: #0f172a; border-top: 1px solid #334155;">
+              <p style="margin: 0 0 8px 0; font-size: 14px; color: #94a3b8;">
+                &copy; 2026 TrackVers. All rights reserved.
+              </p>
+              <p style="margin: 0; font-size: 12px; color: #64748b;">
+                If you didn't create this account, please ignore this email.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        
+        <!-- Spacer -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
